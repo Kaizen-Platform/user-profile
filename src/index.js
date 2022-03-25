@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { render } from 'react-dom'
+import App from 'container/App'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import 'simplebar/dist/simplebar.min.css'
+import 'styles/index.css'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/*const mongoose = require('mongoose')
+mongoose
+  .connect(
+    'mongodb+srv://raj171100:anjugupta1711@userprofile.bxczp.mongodb.net/Data',
+    {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+    }
+  )
+  .then(console.log('Connected to mongodb!'))*/
+
+render(<App />, document.getElementById('app'))
